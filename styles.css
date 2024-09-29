@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+@font-face {
+    font-family: "Dana";
+    src: url("../fonts/Dana-Regular.ttf") format("truetype"),
+        url("../fonts/Dana-Regular.woff") format("woff"),
+        url("../fonts/Dana-Regular.woff2") format("woff2");
+    font-display: swap;
+}
+
+:root {
+    --dark-blue: #0E1D35;
+    --light-blue: #A1C1F4;
+    --white: #FFFFFF;
+    --light-gray: #DEE4EE
+}
+
+body {
+    font-family: "Dana";
+}
+
+.bgc {
+    background: linear-gradient(296deg, #7592C1 -8.98%, #233D65 89.53%);
+}
+
+.first-section {
+    width: 90%;
+    margin: 0 auto;
+    color: white;
+}
+
+.nav-container {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    align-items: center;
+    list-style: none;
+}
+
+.user-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-links>*+* {
+    margin-right: 3.56rem;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6rem;
+    min-height: 100svh;
+}
+
+.hero-header {
+    font-size: 4.8rem;
+    max-width: 600px;
+    margin-bottom: 1.81rem;
+}
+
+.text-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+.image-wrapper {
+    border-radius: 31.25rem 31.25rem 0rem 0rem;
+    height: 500px;
+    margin-top: 2rem;
+}
+
+.image-wrapper img {
+    width: 400px;
+    height: 500px;
+    padding: 10px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-radius: 31.25rem 31.25rem 0rem 0rem;
+    border: 3px solid #FFF;
+
+}
+
+.btn {
+    border-radius: 0.75rem;
+    border: none;
+    font-family: inherit;
+    display: inline-flex;
+    padding: .8rem 1rem .8rem 1rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    width: 120px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.btn.dark {
+    background: var(--light-blue);
+    margin-left: 0.5rem;
+}
+
+.btn.transparent {
+    background: none;
+    color: white;
+    border: 2px solid var(--dark-blue);
+}
